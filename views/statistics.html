@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Banner requests stats</title>
+
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+        html, body {
+            padding: 0;
+            font: 19px/22px 'Open Sans Condensed', sans-serif;
+        }
+        .wrapper {
+            display: inline-block;
+            overflow: hidden;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            border-radius: 7px;
+        }
+        table {
+            table-layout: fixed;
+            border-collapse: collapse;
+        }
+        td {
+            border: 0;
+            padding: 10px 15px;
+        }
+        td.filename {
+            font-size: 80%;
+            font-family: monospace;
+        }
+        thead td {
+            background: #f9f9db;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>File</td>
+                    <td>Times displayed</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-template><td align="center">#</td><td class="filename">#</td><td align="center">#</td></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
